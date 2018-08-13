@@ -1,11 +1,22 @@
 {
   "name": "template",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2Diomedes/bdd_jdr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2Diomedes/bdd_jdr/issues"
+  },
+  "homepage": "https://github.com/2Diomedes/bdd_jdr#readme",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
