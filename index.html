@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Special+Elite" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
   <title>BDD JDR</title>
 </head>
@@ -16,14 +20,37 @@
       <nav class="nested">
         <img src="img/logo.png" alt="img/logo.png">
         <h1>Bestiaire</h1>
-        <ul>
-          <li><a>Bêtes & Animaux</a></li>
+
+
+
+
+        <ul class="ulFlex">
+          <li><a href="#">Création de compte</a></li>
+          <li class="rollContainer">
+            <a href="#">Catégories</a>
+            <ul class="roll">
+              <li><a href="#">Bêtes & Animaux</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Autre li</a></li>
         </ul>
+
+
+
+
+        <aside class="account">
+          <form class="nested" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="name">
+            <input type="email" name="" value="" placeholder="email">
+            <input type="password" name="" value="" placeholder="password">
+            <button type="submit" name="submit">Connection</button>
+          </form>
+        </aside>
       </nav>
     </header>
 
     <main class="nested">
-      <a href="#">
+      <a class="cardContainer" href="#">
         <article class="card">
           <img src="img/logo.png" alt="img/logo.png">
           <h3>Race:</h3>
@@ -31,12 +58,18 @@
           <h3>Poids:</h3>
           <h3>Durée de vie:</h3>
           <h3>Régime alimentaire:</h3>
-          <p>Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="text">
+            <p>
+              Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Decription: Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <h4>Cliquez sur l'article pour lire plus...</h4>
         </article>
       </a>
-
-      <a href="#">
+      <a class="cardContainer" href="#">
         <article class="card">
           <img src="img/logo.png" alt="img/logo.png">
           <h3>Race:</h3>
@@ -44,11 +77,18 @@
           <h3>Poids:</h3>
           <h3>Durée de vie:</h3>
           <h3>Régime alimentaire:</h3>
-          <p>Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="text">
+            <p>
+              Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Decription: Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <h4>Cliquez sur l'article pour lire plus...</h4>
         </article>
       </a>
-      <a href="#">
+      <a class="cardContainer" href="#">
         <article class="card">
           <img src="img/logo.png" alt="img/logo.png">
           <h3>Race:</h3>
@@ -56,11 +96,18 @@
           <h3>Poids:</h3>
           <h3>Durée de vie:</h3>
           <h3>Régime alimentaire:</h3>
-          <p>Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="text">
+            <p>
+              Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Decription: Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <h4>Cliquez sur l'article pour lire plus...</h4>
         </article>
       </a>
-      <a href="#">
+      <a class="cardContainer" href="#">
         <article class="card">
           <img src="img/logo.png" alt="img/logo.png">
           <h3>Race:</h3>
@@ -68,11 +115,18 @@
           <h3>Poids:</h3>
           <h3>Durée de vie:</h3>
           <h3>Régime alimentaire:</h3>
-          <p>Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="text">
+            <p>
+              Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Decription: Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <h4>Cliquez sur l'article pour lire plus...</h4>
         </article>
       </a>
-      <a href="#">
+      <a class="cardContainer" href="#">
         <article class="card">
           <img src="img/logo.png" alt="img/logo.png">
           <h3>Race:</h3>
@@ -80,11 +134,18 @@
           <h3>Poids:</h3>
           <h3>Durée de vie:</h3>
           <h3>Régime alimentaire:</h3>
-          <p>Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="text">
+            <p>
+              Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Decription: Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <h4>Cliquez sur l'article pour lire plus...</h4>
         </article>
       </a>
-      <a href="#">
+      <a class="cardContainer" href="#">
         <article class="card">
           <img src="img/logo.png" alt="img/logo.png">
           <h3>Race:</h3>
@@ -92,21 +153,34 @@
           <h3>Poids:</h3>
           <h3>Durée de vie:</h3>
           <h3>Régime alimentaire:</h3>
-          <p>Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="text">
+            <p>
+              Decription: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Decription: Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <h4>Cliquez sur l'article pour lire plus...</h4>
         </article>
       </a>
     </main>
 
-    <footer>
+    <footer class="nested">
       <div class="workers">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <ul>
+          <li>Thibault Martin-Teyssier</li>
+          <li>Alexia Zampiello</li>
+        </ul>
       </div>
       <div class="links">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-square"></i> facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter-square"></i> twitter</a></li>
+        </ul>
       </div>
       <div class="copyright">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p>&copy; Copyrights</p>
       </div>
     </footer>
 
