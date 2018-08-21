@@ -1,0 +1,45 @@
+@import "style.scss";
+
+.container {
+  background-image: url("../img/bg_beasts.jpg");
+}
+
+header {
+  nav {
+    img {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    h1 {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .ulFlex {
+      li {
+        background: rgba(0, 0, 0, 0.9);
+      }
+    }
+
+    aside {
+      background: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+main {
+  a {
+    background: rgba(192, 192, 192, 0.9);
+  }
+}
+
+.workers {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.links {
+  background: rgba(0, 0, 0, 0.9);
+
+  .copyright {
+    background: rgba(0, 0, 0, 0.9);
+  }
+}

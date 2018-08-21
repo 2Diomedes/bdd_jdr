@@ -296,3 +296,5 @@
 [Tue Aug 21 15:51:57.787747 2018] [php7:notice] [pid 4338] [client 127.0.0.1:34062] PHP Notice:  A non well formed numeric value encountered in /home/thibault/CODE/Projet_Roliste/BDD_JDR/index.php on line 46
 [Tue Aug 21 15:52:08.043061 2018] [php7:notice] [pid 4336] [client 127.0.0.1:34084] PHP Notice:  A non well formed numeric value encountered in /home/thibault/CODE/Projet_Roliste/BDD_JDR/index.php on line 46
 [Tue Aug 21 15:52:08.043199 2018] [php7:notice] [pid 4336] [client 127.0.0.1:34084] PHP Notice:  A non well formed numeric value encountered in /home/thibault/CODE/Projet_Roliste/BDD_JDR/index.php on line 46
+[Tue Aug 21 20:08:01.954783 2018] [php7:notice] [pid 12734] [client 127.0.0.1:52202] PHP Notice:  Undefined variable: all in /home/thibault/CODE/Projet_Roliste/BDD_JDR/index.php on line 31
+[Tue Aug 21 20:08:01.955466 2018] [php7:warn] [pid 12734] [client 127.0.0.1:52202] PHP Warning:  Invalid argument supplied for foreach() in /home/thibault/CODE/Projet_Roliste/BDD_JDR/index.php on line 31
