@@ -15,9 +15,6 @@
 
   <?php
   require "logs.php";
-  $bdd = new PDO('mysql:host=localhost;dbname=Bestiaire', $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-
-  $undead = $bdd->query("SELECT * FROM undead ORDER BY creation_date DESC")->fetchAll();
     ?>
 
   <div class="container">
@@ -51,28 +48,26 @@
 
     <main class="nested">
 
-
-        <?php foreach ($undead as $value):?>
-      <a class="cardContainer" href="#">
-        <article class="card">
-          <img src="<?php echo $value['thumb']; ?>" alt="img/logo.png">
-          <h3><?php echo $value['race']; ?></h3>
-          <h3><?php echo $value['height']; ?></h3>
-          <h3><?php echo $value['weight']; ?></h3>
-          <h3><?php echo $value['longevity']; ?></h3>
-          <h3><?php echo $value['diet']; ?></h3>
-          <div class="text">
-            <p>
-                <?php echo $value['description']; ?>
-            </p>
-          </div>
-          <h4>Cliquez sur l'article pour voir plus...</h4>
-          <h4><?php echo date("d/m/y", strtotime($value['date'])); ?></h4>
-        </article>
-      </a>
-        <?php endforeach;?>
-
-
+        <?php ?>
+        <a class="cardContainer" href="#">
+          <article class="card nested">
+            <img src="<?php  ?>" alt="img/logo.png">
+            <h3><?php  ?></h3>
+            <h3><?php  ?></h3>
+            <h3><?php  ?></h3>
+            <h3><?php  ?></h3>
+            <h3><?php  ?></h3>
+            <div class="text">
+              <p>
+                <?php  ?>
+              </p>
+            </div>
+            <h4>Cliquez sur l'article pour voir plus...</h4>
+            <h4 class="date"><?php  ?></h4>
+            <!-- echo date("d/m/y", strtotime($value['creation_date'])); -->
+          </article>
+        </a>
+        <?php ?>
     </main>
 
     <?php require "footer.php" ?>
