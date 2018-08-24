@@ -4,7 +4,7 @@
     <h1><a href="index.php">Bestiaire</a></h1>
 
     <ul class="ulFlex">
-      <a href="index.php"><li>Acceuil</li></a>
+      <a href="index.php"><li>Accueil</li></a>
       <a href="#"><li>Création de compte</li></a>
       <a href="#"><li>Ajouter une catégorie <i class="fas fa-user-lock"></i></li></a>
       <a href="#"><li>Ajouter une carte <i class="fas fa-user-lock"></i></li></a>
