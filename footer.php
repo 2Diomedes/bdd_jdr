@@ -2,6 +2,8 @@
   <div class="workers">
     <ul>
       <li>Thibault Martin-Teyssier</li>
+      <li>Alexia Zampiello</li>
+      <li>Perrine Salce de Lescure</li>
     </ul>
   </div>
   <div class="links">
