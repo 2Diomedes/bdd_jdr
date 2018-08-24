@@ -6,17 +6,20 @@
     <ul class="ulFlex">
       <a href="index.php"><li>Acceuil</li></a>
       <a href="#"><li>Création de compte</li></a>
+      <a href="#"><li>Ajouter une catégorie <i class="fas fa-user-lock"></i></li></a>
+      <a href="#"><li>Ajouter une carte <i class="fas fa-user-lock"></i></li></a>
       <li class="rollContainer">
         Catégories
         <ul class="roll">
           <a href="beasts.php"><li>Bêtes & Animaux</li></a>
+          <a href="undeads.php"><li>Morts-Vivants et Revenants</li></a>
         </ul>
       </li>
-      <a href="#"><li>Autre li</li></a>
     </ul>
 
+
     <aside class="account">
-      <img src="https://via.placeholder.com/150x150" alt="avatar">
+      <img src="img/avatar.jpeg" alt="avatar">
       <h3>Your Username</h3>
       <h3>Rank: ???</h3>
     </aside>

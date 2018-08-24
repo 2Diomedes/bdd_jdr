@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Special+Elite" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_undead.css">
   <title>BDD JDR</title>
 </head>
 
@@ -18,19 +17,44 @@
   require "logs.php";
   $bdd = new PDO('mysql:host=localhost;dbname=Bestiaire', $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
-  $everything = $bdd->query("SELECT * FROM everything ORDER BY creation_date DESC")->fetchAll();
+  $undead = $bdd->query("SELECT * FROM undead ORDER BY creation_date DESC")->fetchAll();
     ?>
 
   <div class="container">
 
-    <?php require "head.php" ?>
+    <header>
+      <nav class="nested">
+        <img src="img/logo_undeads.png" alt="img/logo_undeads.png">
+        <h1><a href="index.php">Bestiaire</a></h1>
+
+        <ul class="ulFlex">
+          <a href="index.php"><li>Acceuil</li></a>
+          <a href="#"><li>Création de compte</li></a>
+          <a href="#"><li>Ajouter une catégorie <i class="fas fa-user-lock"></i></li></a>
+          <a href="#"><li>Ajouter une carte <i class="fas fa-user-lock"></i></li></a>
+          <li class="rollContainer">
+            Catégories
+            <ul class="roll">
+              <a href="beasts.php"><li>Bêtes & Animaux</li></a>
+              <a href="undeads.php"><li>Morts-Vivants et Revenants</li></a>
+            </ul>
+          </li>
+        </ul>
+
+        <aside class="account">
+          <img src="img/avatar.jpeg" alt="avatar">
+          <h3>Your Username</h3>
+          <h3>Rank: ???</h3>
+        </aside>
+      </nav>
+    </header>
 
     <main class="nested">
 
 
-        <?php foreach ($everything as $value):?>
+        <?php foreach ($undead as $value):?>
       <a class="cardContainer" href="#">
-        <article class="card nested">
+        <article class="card">
           <img src="<?php echo $value['thumb']; ?>" alt="img/logo.png">
           <h3><?php echo $value['race']; ?></h3>
           <h3><?php echo $value['height']; ?></h3>
@@ -43,11 +67,14 @@
             </p>
           </div>
           <h4>Cliquez sur l'article pour voir plus...</h4>
-          <h4 class="date"><?php echo date("d/m/y", strtotime($value['creation_date'])); ?></h4>
+          <h4><?php echo date("d/m/y", strtotime($value['date'])); ?></h4>
         </article>
       </a>
         <?php endforeach;?>
+
+
     </main>
+
     <?php require "footer.php" ?>
   </div>
 

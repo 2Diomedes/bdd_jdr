@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Special+Elite" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style_beast.css">
   <title>BDD JDR</title>
 </head>
@@ -18,7 +17,7 @@
   require "logs.php";
   $bdd = new PDO('mysql:host=localhost;dbname=Bestiaire', $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
-  $beast = $bdd->query("SELECT * FROM beast")->fetchAll();
+  $beast = $bdd->query("SELECT * FROM beast ORDER BY creation_date DESC")->fetchAll();
     ?>
 
   <div class="container">
@@ -31,17 +30,19 @@
         <ul class="ulFlex">
           <a href="index.php"><li>Acceuil</li></a>
           <a href="#"><li>Création de compte</li></a>
+          <a href="#"><li>Ajouter une catégorie <i class="fas fa-user-lock"></i></li></a>
+          <a href="#"><li>Ajouter une carte <i class="fas fa-user-lock"></i></li></a>
           <li class="rollContainer">
             Catégories
             <ul class="roll">
               <a href="beasts.php"><li>Bêtes & Animaux</li></a>
+              <a href="undeads.php"><li>Morts-Vivants et Revenants</li></a>
             </ul>
           </li>
-          <a href="#"><li>Autre li</li></a>
         </ul>
 
         <aside class="account">
-          <img src="https://via.placeholder.com/150x150" alt="avatar">
+          <img src="img/avatar.jpeg" alt="avatar">
           <h3>Your Username</h3>
           <h3>Rank: ???</h3>
         </aside>
@@ -55,18 +56,18 @@
       <a class="cardContainer" href="#">
         <article class="card">
           <img src="<?php echo $value['thumb']; ?>" alt="img/logo.png">
-          <h3>Race: <?php echo $value['race']; ?></h3>
-          <h3>Taille: <?php echo $value['height']; ?></h3>
-          <h3>Poids: <?php echo $value['weight']; ?></h3>
-          <h3>Durée de vie: <?php echo $value['longevity']; ?></h3>
-          <h3>Régime alimentaire: <?php echo $value['diet']; ?></h3>
+          <h3><?php echo $value['race']; ?></h3>
+          <h3><?php echo $value['height']; ?></h3>
+          <h3><?php echo $value['weight']; ?></h3>
+          <h3><?php echo $value['longevity']; ?></h3>
+          <h3><?php echo $value['diet']; ?></h3>
           <div class="text">
             <p>
               Decription: <?php echo $value['description']; ?>
             </p>
           </div>
-          <h4>Cliquez sur l'article pour lire plus...</h4>
-          <h4>Date de sortie: <?php echo date("d/m/y", strtotime($value['date'])); ?></h4>
+          <h4>Cliquez sur l'article pour voir plus...</h4>
+          <h4><?php echo date("d/m/y", strtotime($value['date'])); ?></h4>
         </article>
       </a>
         <?php endforeach;?>

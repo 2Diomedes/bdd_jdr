@@ -1,0 +1,45 @@
+@import "style.scss";
+
+.container {
+  background-image: url("../img/bg_undeads.jpg");
+}
+
+header {
+  nav {
+    img {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .ulFlex {
+      li {
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    aside {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+main {
+  a {
+    background: rgba(192, 192, 192, 0.8);
+  }
+}
+
+.workers {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.links {
+  background: rgba(0, 0, 0, 0.8);
+
+  .copyright {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
